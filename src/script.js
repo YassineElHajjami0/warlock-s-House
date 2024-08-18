@@ -62,13 +62,6 @@ const plane = new THREE.Mesh(
   })
 );
 plane.rotation.x = -Math.PI * 0.5;
-gui
-  .add(plane.material, "displacementBias")
-  .min(-1)
-  .max(1)
-  .step(0.01)
-  .name("Displacement Bias");
-
 /**
  * House
  */
